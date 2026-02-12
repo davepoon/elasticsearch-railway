@@ -1,0 +1,13 @@
+bootstrap.memory_lock: "true"
+discovery.type: "single-node"
+node.name: "elasticsearch"
+path.data: "/esdata"
+xpack.security.enabled: "true"
+xpack.security.enrollment.enabled: "false"
+node.store.allow_mmap: "false"
+network.host: 0.0.0.0
+xpack.security.authc:
+  anonymous:
+    username: anonymous_user
+    roles: anonymous_role
+    authz_exception: true
